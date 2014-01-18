@@ -1,19 +1,41 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="sv" ng-app="app">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Grove Media - webbutveckling för alla</title>
-  <meta name="description" content="Grove Media - webbutveckling för alla">
+  <title>Grove Media - webbutveckling fÃ¶r alla</title>
+  <meta name="description" content="Grove Media - webbutveckling fÃ¶r alla">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script>
 </head>
-<body ng-controller="AppCtrl">
-<p>{{ greet }}</p>
-  <div ng-view></div>
-  <script src="app/app.js"></script>
+<body>
+  <header>
+    <h1>Grove Media</h1>
+    <i class="fa fa-envelope" ng-click=""></i>
+  </header>
+  
+  <section>
+    <table>
+      <tr>
+        <td><i class="fa fa-code" ng-mouseenter="showTooltip(this)" ng-mouseleave="hideTooltip()"></i></td>
+        <td><i class="fa fa-cloud" ng-mouseenter="showTooltip(this)" ng-mouseleave="hideTooltip()"></i></td>
+        <td><i class="fa fa-mobile" ng-mouseenter="showTooltip(this)" ng-mouseleave="hideTooltip()"></i></td>
+      </tr>
+      <tr>
+        <td><i class="fa fa-bar-chart-o" ng-mouseenter="showTooltip(this)" ng-mouseleave="hideTooltip()"></i></td>
+        <td><i class="fa fa-pencil" ng-mouseenter="showTooltip(this)" ng-mouseleave="hideTooltip()"></i></td>
+        <td><i class="fa fa-wrench" ng-mouseenter="showTooltip(this)" ng-mouseleave="hideTooltip()"></i></td>
+      </tr>
+    </table>
+    
+    <div class="tooltip" ng-show="tooltipIsVisible"><div class="tooltip-arrow"></div><div class="tooltip-content"><p>Hej hej</p></div></div>
+  </section>
+  
+  <!--<script src="app/app.js"></script>-->
 </body>
 </html>
 <!-- Add apple-touch-icon-precomposed.png and favicon.ico -->
