@@ -18,7 +18,8 @@
   return {
     link: function (scope, element, attrs) {
       $(element).bind('mouseenter', function () {
-        scope.showTooltip($(this).position());
+        var pos = $(this).position()
+        scope.showTooltip(pos.left, pos.top);
       });
       
       $(element).bind('mouseleave', function () {
