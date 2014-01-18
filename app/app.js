@@ -14,13 +14,8 @@
   };
 })
 
-.directive('service', function () {
+.directive('gmService', function () {
   return {
-    restrict: 'E',
-    scope: {
-      type: '=type'
-    },
-    template: '<i class="fa fa-{{ type }}"></i>',
     link: function (scope, element, attrs) {
       element.bind('mouseenter', function (e) {
         scope.showTooltip(e.clientX, e.clientY);
