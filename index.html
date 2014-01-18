@@ -21,16 +21,19 @@
   <section>
     <table>
       <tr>
-        <td><i class="fa fa-code" gmService></i</td>
-        <td><i class="fa fa-cloud" gmService></td>
-        <td><i class="fa fa-mobile" gmService></td>
-        <td><i class="fa fa-bar-chart-o" gmService></td>
-        <td><i class="fa fa-pencil" gmService></td>
-        <td><i class="fa fa-wrench" gmService></td>
+        <td><i class="fa fa-code" gmService></i></td>
+        <td><i class="fa fa-cloud" gmService></i></td>
+        <td><i class="fa fa-mobile" gmService></i></td>
+        <td><i class="fa fa-bar-chart-o" gmService></i></td>
+        <td><i class="fa fa-pencil" gmService></i></td>
+        <td><i class="fa fa-wrench" gmService></i></td>
       </tr>
     </table>
     
-    <div class="tooltip" ng-style="tooltipPos"><div class="tooltip-arrow"></div><div class="tooltip-content"><p>Hej hej</p></div></div>
+    <div class="tooltip" ng-show="tooltipIsVisible === true" ng-style="tooltipPos">
+      <div class="tooltip-arrow"></div>
+      <div class="tooltip-content"><p>Hej hej</p></div>
+    </div>
   </section>
   
   <script src="app/app.js"></script>
