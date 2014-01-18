@@ -21,21 +21,21 @@
   <section>
     <table>
       <tr>
-        <td><i class="fa fa-code" ng-mouseenter="showTooltip(this)" ng-mouseleave="hideTooltip()"></i></td>
-        <td><i class="fa fa-cloud" ng-mouseenter="showTooltip(this)" ng-mouseleave="hideTooltip()"></i></td>
-        <td><i class="fa fa-mobile" ng-mouseenter="showTooltip(this)" ng-mouseleave="hideTooltip()"></i></td>
+        <td><i class="fa fa-code" ng-click="toogleTooltip(this)"></i></td>
+        <td><i class="fa fa-cloud" ng-click="toogleTooltip(this)"></i></td>
+        <td><i class="fa fa-mobile" ng-click="toogleTooltip(this)"></i></td>
       </tr>
       <tr>
-        <td><i class="fa fa-bar-chart-o" ng-mouseenter="showTooltip(this)" ng-mouseleave="hideTooltip()"></i></td>
-        <td><i class="fa fa-pencil" ng-mouseenter="showTooltip(this)" ng-mouseleave="hideTooltip()"></i></td>
-        <td><i class="fa fa-wrench" ng-mouseenter="showTooltip(this)" ng-mouseleave="hideTooltip()"></i></td>
+        <td><i class="fa fa-bar-chart-o" ng-click="toogleTooltip(this)"></i></td>
+        <td><i class="fa fa-pencil" ng-click="toogleTooltip(this)"></i></td>
+        <td><i class="fa fa-wrench" ng-click="toogleTooltip(this)"></i></td>
       </tr>
     </table>
     
     <div class="tooltip" ng-show="tooltipIsVisible"><div class="tooltip-arrow"></div><div class="tooltip-content"><p>Hej hej</p></div></div>
   </section>
   
-  <!--<script src="app/app.js"></script>-->
+  <script src="app/app.js"></script>
 </body>
 </html>
 <!-- Add apple-touch-icon-precomposed.png and favicon.ico -->

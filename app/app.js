@@ -7,12 +7,8 @@
 .controller('AppCtrl', function ($scope) {
   $scope.tooltipIsVisible = false;
   
-  $scope.showTooltip = function (item) {
+  $scope.toogleTooltip = function (item) {
     $(item).css('top:' + $(item).css('top')).css('left', $(item).css('left'));
     $scope.tooltipIsVisible = true;
-  };
-  
-  $scope.hideTooltip = function () {
-    $scope.tooltipIsVisible = false;
   };
 });
