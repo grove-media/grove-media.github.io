@@ -17,11 +17,11 @@
 .directive('gmService', function () {
   return {
     link: function (scope, element, attrs) {
-      element.bind('mouseenter', function (e) {
-        scope.showTooltip(e.clientX, e.clientY);
+      $(element).bind('mouseenter', function () {
+        scope.showTooltip($(this).position());
       });
       
-      element.bind('mouseleave', function () {
+      $(element).bind('mouseleave', function () {
         scope.hideTooltip();
       });
     }
