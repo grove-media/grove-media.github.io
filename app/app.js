@@ -2,10 +2,10 @@
 
 .controller('AppCtrl', function ($scope) {
   $scope.tooltipIsVisible = false;
-  $scope.tooltipPos = {x:0, y:40};
+  $scope.tooltipPos = {left:0, top:0};
   
   $scope.showTooltip = function (x, y) {
-    $scope.tooltipPos = {x, y};
+    $scope.tooltipPos = {left: x, top: y};
     $scope.tooltipIsVisible = true;
   };
   

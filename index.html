@@ -30,7 +30,7 @@
       </tr>
     </table>
     
-    <div class="tooltip" ng-show="tooltipIsVisible === true" style="top: {{ tooltipPos.y }}; left: {{ tooltipPos.x };><div class="tooltip-arrow"></div><div class="tooltip-content"><p>Hej hej</p></div></div>
+    <div class="tooltip" ng-show="tooltipIsVisible === true" ng-style="tooltipPos"><div class="tooltip-arrow"></div><div class="tooltip-content"><p>Hej hej</p></div></div>
   </section>
   
   <script src="app/app.js"></script>
