@@ -21,18 +21,16 @@
   <section>
     <table>
       <tr>
-        <td><i class="fa fa-code" ng-click="toogleTooltip(this)"></i></td>
-        <td><i class="fa fa-cloud" ng-click="toogleTooltip(this)"></i></td>
-        <td><i class="fa fa-mobile" ng-click="toogleTooltip(this)"></i></td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-bar-chart-o" ng-click="toogleTooltip(this)"></i></td>
-        <td><i class="fa fa-pencil" ng-click="toogleTooltip(this)"></i></td>
-        <td><i class="fa fa-wrench" ng-click="toogleTooltip(this)"></i></td>
+        <td><service type="code"></service></td>
+        <td><service type="cloud"></service></td>
+        <td><service type="mobile"></service></td>
+        <td><service type="bar-chart-o"></service></td>
+        <td><service type="pencil"></service></td>
+        <td><service type="wrench"></service></td>
       </tr>
     </table>
     
-    <div class="tooltip" ng-show="tooltipIsVisible === true"><div class="tooltip-arrow"></div><div class="tooltip-content"><p>Hej hej</p></div></div>
+    <div class="tooltip" ng-show="tooltipIsVisible === true" style="top: {{ tooltipPos.y }}; left: {{ tooltipPos.x };><div class="tooltip-arrow"></div><div class="tooltip-content"><p>Hej hej</p></div></div>
   </section>
   
   <script src="app/app.js"></script>
