@@ -1,6 +1,6 @@
 ﻿$(function () {
-  $('td > i').hover(function () {
-    $('.tooltip-arrow').css('left', $(this).position().left + $(this).width() / 2);
+  $('td').hover(function () {
+    $('.tooltip-arrow').css('left', $(this).children('i').position().left + $(this).children('i').width() / 2);
     $('.tooltip').show();
   }, function () {
     $('.tooltip').hide();
