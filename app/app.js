@@ -11,9 +11,11 @@
   ];
   
   $scope.activeService = null;
+  $scope.tooltipPos = { left: 0 };
   
   $scope.setActiveService = function (srvc, e) {
     $scope.activeService = srvc;
+    $scope.tooltipPos = { left: e.offsetX };
   };
   
   $scope.shouldShowTooltip = function () {
