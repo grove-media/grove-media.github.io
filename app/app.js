@@ -1,7 +1,7 @@
 ﻿angular.module('app', ['ngRoute'])
 
 .controller('AppCtrl', function ($scope) {
-  $scope.services = [
+  $scope.gmServices = [
     { css: 'fa-code' },
     { css: 'fa-cloud' },
     { css: 'fa-mobile' },
