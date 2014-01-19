@@ -1,26 +1,21 @@
 ﻿angular.module('app', ['ngRoute'])
 
 .controller('AppCtrl', function ($scope) {
-  $scope.tooltipIsVisible = false;
-  $scope.tooltipPos = {left:0, top:0};
+  $scope.services = [
+    { css: 'fa-code' },
+    { css: 'fa-cloud' },
+    { css: 'fa-mobile' },
+    { css: 'fa-bar-chart-o' },
+    { css: 'fa-pencil' },
+    { css: 'fa-wrench' }
+  ];
+  
+  $scope.activeService = null;
+  
+  /*$scope.tooltipPos = {left:0, top:0};
   $scope.showTooltip = function (e) {
     $scope.tooltipIsVisible = true;
     $scope.tooltipPos = { left: e.clientX, top: e.clientY };
     e.stopPropagation();
-  };
-})
-
-.directive('gmService', function () { 
-  return {
-    link: function (scope, element, attrs) {
-      element.bind('mouseenter', function () {
-        scope.tooltipPos = element.position();
-        scope.tooltipIsVisible = true;
-      });
-      
-      /*$(element).bind('mouseleave', function () {
-        scope.tooltipIsVisible = false;
-      });*/
-    }
-  };
+  };*/
 });
