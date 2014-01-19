@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="sv" ng-app="app">
+<html lang="sv">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +9,28 @@
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
-<body ng-controller="AppCtrl">
+<body>
   <header>
     <h1>Grove Media</h1>
-    <i class="fa fa-envelope" ng-click=""></i>
+    <i class="fa fa-envelope"></i>
   </header>
   
   <section>
     <table>
       <tr>
-        <td ng-repeat="srvc in gmServices"><i class="fa {{ srvc.css }}" ng-mouseenter="setActiveService(srvc, $event)"></i></td>
+        <td><i class="fa fa-code"></i></td>
+        <td><i class="fa fa-cloud"></i></td>
+        <td><i class="fa fa-mobile"></i></td>
+        <td><i class="fa fa-bar-chart-o"></i></td>
+        <td><i class="fa fa-pencil"></i></td>
+        <td><i class="fa fa-wrench"></i></td>
       </tr>
     </table>
     
-    <div class="tooltip" ng-show="shouldShowTooltip()">
-      <div class="tooltip-arrow" ng-style="tooltipPos"></div>
+    <div class="tooltip">
+      <div class="tooltip-arrow"></div>
       <div class="tooltip-content">
         <p>
           Hej hej
