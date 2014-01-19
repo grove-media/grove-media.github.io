@@ -21,13 +21,13 @@
   <section>
     <table>
       <tr>
-        <td ng-repeat="service in services"><i class="fa {{ sercice.css }}" ng-mouseenter="activeService = service"></i></td>
+        <td ng-repeat="service in gmServices"><i class="fa {{ service.css }}" ng-mouseenter="activeService = service"></i></td>
       </tr>
     </table>
     
     <div class="tooltip" ng-show="activeService != null">
       <div class="tooltip-arrow"></div>
-      <div class="tooltip-content"><p><i class="fa {{ activeService-css }}"></i>Hej hej</p></div>
+      <div class="tooltip-content"><p><i class="fa {{ activeService.css }}"></i>Hej hej</p></div>
     </div>
   </section>
   
