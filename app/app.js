@@ -5,6 +5,7 @@
   $scope.tooltipPos = {left:0, top:0};
   
   $scope.showTooltip = function (x, y) {
+    alert(x + ", " + y);
     $scope.tooltipPos = {left: x, top: y};
     $scope.tooltipIsVisible = true;
   };
