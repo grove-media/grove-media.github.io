@@ -4,7 +4,7 @@
   $scope.tooltipIsVisible = false;
   $scope.tooltipPos = {left:0, top:0};
   $scope.showTooltip = function (e) {
-    $scope.tooltipIsVisible = !$scope.tooltipIsVisible;
+    $scope.tooltipIsVisible = true;
     $scope.tooltipPos = { left: e.clientX, top: e.clientY };
     e.stopPropagation();
   };
@@ -13,8 +13,8 @@
 .directive('gmService', function () { 
   return {
     link: function (scope, element, attrs) {
-      element.bind('mouseenter', function (e) {
-        scope.tooltipPos = { left: e.clientX, top: e.clientY };
+      element.bind('mouseenter', function () {
+        scope.tooltipPos = element.position();
         scope.tooltipIsVisible = true;
       });
       
