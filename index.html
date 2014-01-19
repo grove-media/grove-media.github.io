@@ -21,11 +21,11 @@
   <section>
     <table>
       <tr>
-        <td ng-repeat="service in gmServices"><i class="fa {{ service.css }}" ng-mouseenter="activeService = service"></i></td>
+        <td ng-repeat="srvc in gmServices"><i class="fa {{ srvc.css }}" ng-mouseenter="setActiveService(srvc, $event)"></i></td>
       </tr>
     </table>
     
-    <div class="tooltip" ng-show="activeService !== null">
+    <div class="tooltip" ng-show="shouldShowTooltip()">
       <div class="tooltip-arrow"></div>
       <div class="tooltip-content"><p><i class="fa {{ activeService.css }}"></i>Hej hej</p></div>
     </div>

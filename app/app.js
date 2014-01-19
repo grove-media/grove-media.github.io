@@ -12,10 +12,11 @@
   
   $scope.activeService = null;
   
-  /*$scope.tooltipPos = {left:0, top:0};
-  $scope.showTooltip = function (e) {
-    $scope.tooltipIsVisible = true;
-    $scope.tooltipPos = { left: e.clientX, top: e.clientY };
-    e.stopPropagation();
-  };*/
+  $scope.setActiveService = function (srvc, e) {
+    $scope.activeService = srvc;
+  };
+  
+  $scope.shouldShowTooltip = function () {
+    return $scope.activeService !== null;
+  };
 });
