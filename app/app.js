@@ -3,9 +3,14 @@
 .controller('AppCtrl', function ($scope) {
   $scope.tooltipIsVisible = false;
   $scope.tooltipPos = {left:0, top:0};
+  $scope.toggleTooltip = function (e) {
+    $scope.tooltipIsVisible = !$scope.tooltipIsVisible;
+    $scope.tooltipPos = { left: e.clientX, top: e.clientY };
+    e.stopPropagation();
+  };
 })
 
-.directive('gmService', function () { 
+/*.directive('gmService', function () { 
   return {
     link: function (scope, element, attrs) {
       $(element).bind('mouseenter', function () {
@@ -19,4 +24,4 @@
       });
     }
   };
-});
+})*/;
