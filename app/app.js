@@ -12,6 +12,7 @@
       if(!$('.tooltip').is(':visible')) {
         $('.tooltip').fadeIn('fast');
         $('.tooltip-arrow').css('left', ($i.position().left + $i.width() / 2));
+        $('.tooltip-content > div:visible').hide();
         $(disp).fadeIn('fast');
       }
       else {
