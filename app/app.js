@@ -1,11 +1,11 @@
 ﻿$(function () {
   $('td').hover(function () {
     var $i = $(this).children('i');
-    $('.tooltip-arrow').css('left', $i.position().left + $i.width() / 2);
+    $('.tooltip-arrow').animate({'left: ' + ($i.position().left + $i.width() / 2 + 'px')});
     $('.tooltip-content > div').hide();
     $($(this).attr('data-display')).show();
-    $('.tooltip').show();
+    $('.tooltip').fadeIn('fast');
   }, function () {
-    $('.tooltip').hide();
+    $('.tooltip').fadeOut('fast');
   });
 });
