@@ -68,12 +68,12 @@ textarea {
  Site specific styles
  ========================================================================== */
 
-body { font-size: 1.1em; background-color: #fff; }
+body { font-size: 1.1em; background-color: #fff; overflow-y: scroll; }
 body > * { margin: 0 auto; }
 header, footer { width: 50%; text-align: center; background-color: #fff; color: #111529; }
 body > section { width: 50%; text-align: center; background-color: #fff; color: #111529; }
 table { width: 100%; }
-h1 { color: #FF5233; font-size: 5em; text-shadow: 0.03em 0.03em rgba(0, 0, 0, 0.3); margin: 0.5em 0 0.4em 0; padding: 0; }
+h1 { color: #FF5233; font-size: 5em; text-shadow: 0.03em 0.03em rgba(0, 0, 0, 0.3); margin: 0.3em 0 0.4em 0; padding: 0; }
 header > i { font-size: 3em; color: #4D6CFF; text-shadow: 0.03em 0.03em rgba(0, 0, 0, 0.3); cursor: pointer; }
 header { margin-bottom: 2em; }
 section td { padding: 1em 1em; }

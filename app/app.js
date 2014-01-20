@@ -7,11 +7,16 @@
       $('.tooltip').fadeOut('fast');
     }
     else {
+      var pos = ($i.position().left + $i.width() / 2);
+    
       if(!$('.tooltip').is(':visible')) {
         $('.tooltip').fadeIn('fast');
+        $('.tooltip-arrow').css('left', ($i.position().left + $i.width() / 2));
+      }
+      else {
+        $('.tooltip-arrow').animate({left:  pos});
       }
       
-      $('.tooltip-arrow').animate({left:  ($i.position().left + $i.width() / 2)});
       $('.tooltip-content > div').fadeOut('100');
       $(disp).fadeIn('fast');
     }
