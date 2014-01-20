@@ -12,14 +12,14 @@
       if(!$('.tooltip').is(':visible')) {
         $('.tooltip').fadeIn('fast');
         $('.tooltip-arrow').css('left', ($i.position().left + $i.width() / 2));
+        $(disp).fadeIn('fast');
       }
       else {
         $('.tooltip-arrow').animate({left:  pos});
+        $('.tooltip-content > div:visible').fadeOut('100', function () {
+          $(disp).fadeIn('fast');
+        });
       }
-      
-      $('.tooltip-content > div:visible').fadeOut('100', function () {
-        $(disp).fadeIn('fast');
-      });
     }
   });
 });
