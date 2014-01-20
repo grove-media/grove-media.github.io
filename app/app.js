@@ -22,4 +22,9 @@
       }
     }
   });
+  
+  $('#contact').click(function () {
+    $(this).after('<a href="mailto:info@grovemedia.se">info@grovemedia.se</a>');
+    $(this).remove();
+  });
 });
