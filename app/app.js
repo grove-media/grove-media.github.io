@@ -17,8 +17,9 @@
         $('.tooltip-arrow').animate({left:  pos});
       }
       
-      $('.tooltip-content > div').fadeOut('100');
-      $(disp).fadeIn('fast');
+      $('.tooltip-content > div:visible').fadeOut('100', function () {
+        $(disp).fadeIn('fast');
+      });
     }
   });
 });
