@@ -1,11 +1,19 @@
 ﻿$(function () {
-  $('td').hover(function () {
+  $('td').click(function () {   
     var $i = $(this).children('i');
-    $('.tooltip-arrow').animate({left:  ($i.position().left + $i.width() / 2)});
-    $('.tooltip-content > div').hide();
-    $($(this).attr('data-display')).show();
-    $('.tooltip').fadeIn('fast');
-  }, function () {
-    $('.tooltip').fadeOut('fast');
+    var disp = $(this).attr('data-display');
+    
+    if($('.tooltip').is(':visible') && $(disp).is(':visible')) {
+      $('.tooltip').fadeOut('fast');
+    }
+    else {
+      if(!$('.tooltip').is(':visible')) {
+        $('.tooltip').fadeIn('fast');
+      }
+      
+      $('.tooltip-arrow').animate({left:  ($i.position().left + $i.width() / 2)});
+      $('.tooltip-content > div').fadeOut('100');
+      $(disp).fadeIn('fast');
+    }
   });
 });
