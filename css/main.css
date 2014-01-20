@@ -84,6 +84,7 @@ section i { font-size: 2em; color: #727272; text-shadow: 0.04em 0.04em rgba(0, 0
 .tooltip-arrow { position: absolute; z-index: 1000; background-color: #FF5233; border-left: 1em 1em #FF5233; border-right: 1em 1em #FF5233; border-top: none; border-bottom: none; }
 .tooltip-arrow:after { bottom: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(17, 21, 41, 0); border-bottom-color: #FF5233; border-width: 12px; margin-left: -12px; }
 .tooltip-content { background-color: #FF5233; color: #fff; border-radius: 0.6em; padding: 0.2em 1em; box-shadow: 0.3em 0.3em 0.1em rgba(0, 0, 0, 0.3); width: 100%; text-align: center; }
+.tooltip-content > div { display: none; }
 
 
 
